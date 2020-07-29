@@ -1,0 +1,138 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
+:focus {outline: 0;}
+
+body{
+color:#555;
+font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+line-height:1.5;
+border-bottom:40px solid #0b5f00;
+background:#f4f4f4;
+}
+
+#wrapper{
+margin:0 auto;
+padding:0 1%;
+}
+
+.inner{
+margin:0 auto;
+width:100%;
+}
+
+#header{
+overflow:hidden;
+padding:8px 0;
+background:#1cce34;
+}
+
+.logo a{
+font-size:40px;
+font-weight:bold;
+line-height:1;
+color:#fff;
+}
+
+#header h1{
+font-size:30px;
+color:#fff;
+}
+
+#mainBanner{
+margin:0 auto 30px;
+padding:0;
+width:100%;
+line-height:0;
+background:#fff;
+}
+
+#mainBanner .inner{position:relative;}
+
+#mainBanner img{
+max-width:100%;
+height:auto;
+}
+
+.slogan{
+position:absolute;
+max-width:100%;
+height:auto;
+bottom:0;
+left:0;
+padding:5px 10px;
+line-height:1.4;
+z-index:100;
+}
+
+.slogan h2{
+padding-bottom:15px;
+color:rgb(255, 255, 255);
+font-size:40px;
+}
+
+.gridWrapper{
+padding-bottom:20px;
+overflow: hidden;
+}
+
+.grid h3{
+padding:10px 0;
+font-weight:bold;
+font-size: 20px;
+color:#fff;
+background:#510080;
+text-align:center;
+}
+
+section.content{
+padding:0 10px 10px;
+margin-bottom:20px;
+overflow:hidden;
+font-size:35px;
+background:#fff;
+box-shadow:0 0 3px #ddd;
+}
+
+section.content p{margin-bottom:5px;}
+
+h3.heading{
+padding:5px 10px;
+margin:0 -10px 20px;
+font-size:16px;
+color:rgb(0, 0, 0);
+background:#f2f700;
+}
+
+img.frame,#gallery img{
+padding:3px;
+box-shadow:0 0 3px #ddd;
+}
+
+#gallery .grid{
+margin-bottom:10px;
+box-shadow:none;
+}
+
+.alignleft{
+float:left;
+clear:left;
+margin:3px 10px 10px 0;
+}
+	#wrapper,.inner{
+	width:940px;
+	padding:0;
+	}
+	
+	#wrapper{padding-bottom:20px;}
+	
+	.gridWrapper{
+	width:960px;
+	margin:0 0 0 -20px;
+	}
+
+	.grid{
+	float:left;
+	width:220px;
+	margin-left:20px;
+	}
+	
