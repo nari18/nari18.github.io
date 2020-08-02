@@ -5,133 +5,69 @@
 <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
 <meta name="description" content="a">
 <meta name="keywords" content="">
-<title>gallery</title>
+<title>Portfolio</title>
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
 
-<script src="js/jquery1.7.2.min.js"></script>
-<script src="js/script.js"></script>
 </head>
 <body>
 
 <script src="swiper.js"></script>
 <link href="swiper.css" rel="stylesheet">
-<script>
-	var swiper=new Swiper(".swiper-container",{
-		loop:true,
-		autplay:true,
-		effct:'slide',
-		navigation:{
-			nextEl:'.swiper-botton-next',
-			prevEl:'.swiper-botton-prev',
-		}
-	})
-
-</script>
 
 <div id="header">
-	
-	<div class="inner">
-		<div class="logo">
-			<a href="index.html">gallery<br></a>
-      <h1>x19031 神谷奈利親</h1>
-		</div>
-  </div>
+		<header class="global-nav">
+			<h1><a href="index.html">Portfolio</a></h1>
+			<nav class="menu">
+				<ul>
+					<li><a href="#sec1">top</a></li>
+					<li><a href="#sec2">profile</a></li>
+					<li><a href="#sec3">gallery</a></li>
+				</ul>
+			</nav>
+		</header>
 </div>
 
-<div id="mainBanner" class="mainImg">
-	
-  	<div class="inner">
-		<div class="swiper-container">
-
-			<div class="swiper-wrapper">
+<section id="sec1">
+	<p>portfolio</p>
+</section>
+  <section id="sec2">
 		
-				<div class="swiper-slide"><img src="images/image6.jpg" alt="" width="1000" height="200"></div>
-				<div class="swiper-slide"><img src="images/image01.jpg" alt="" width="1000" height="200"></div>
-				<div class="swiper-slide"><img src="images/image02.jpg" alt="" width="1000" height="200"></div>
-				<div class="swiper-slide"><img src="images/image03.jpg" alt="" width="1000" height="200"></div>
-				
-			</div>
-			<div class="swiper-button-prev"></div>
-			<div class="swiper-button-next"></div>
+	<div class="background-filter"></div>
 
+	<div class="profile-photo">
+		<img src="images/face_x19031.jpg">
+		<span class="circle1"></span>
+		<span class="circle2"></span>
+		<span class="circle3"></span>
 		</div>
-		<div class="slogan">
-			<h2>画像は全てネットから入手しました。</h2>	
-		</div>
-	</div>
-</div>
-
-<div id="wrapper">
-
-	<section class="content">
-		<h3 class="heading">メイン作品</h3>
-		<article>
-			<img src="images/image1.jpg" width="320" height="240" alt="" class="alignleft frame">
-			<p>メイン作品概要<br>説明<br>使ったアプリ<br>その他など</p>
-		</article>
-	</section>
-
-  <section class="gridWrapper">
-		<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image2.jpg" width="220" height="160" alt=""></p>	
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
+		<div class="profile-text">
+			<h1>神谷 奈利親</h1> 
+		<p>初めまして！<br>愛知工業大学のメディア情報専攻の神谷奈利親です。<br>趣味はゲームで寝ることが好きです。<br>mail：：x19031xx@aitech.ac.jp</p>
+	  </div>
+  </section>
+  <section id="sec3">
+	<article class="grid">
+			<h3>ボールを持った手</h3>
+			<p class="img"><img src="images/image2.png" width="220" height="160" alt=""></p>	
+			<p>初めてデッサンを行った時に書いた作品</p>
 		</article>
 		<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image3.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
+			<h3>鉛筆削り</h3>
+			<p class="img"><img src="images/image3.png" width="220" height="160" alt=""></p>
+			<p>手書きでレンダリングというのをやった作品</p>
 		</article>
 		<article class="grid">
-      <h3>作品名</h3>
-			<p class="img"><img src="images/image4.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
+      <h3>香水と口紅</h3>
+			<p class="img"><img src="images/image4.png" width="220" height="160" alt=""></p>
+			<p>手書きでレンダリングというのをやった作品</p>
 		</article>
     	<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image5.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
+			<h3>ディスク</h3>
+			<p class="img"><img src="images/image5.png" width="220" height="160" alt=""></p>
+			<p>手書きでレンダリングというのをやった作品</p>
 		</article>
 	</section>
-
-	<section class="gridWrapper">
-		<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image2.jpg" width="220" height="160" alt=""></p>	
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
-		</article>
-		<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image3.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
-		</article>
-		<article class="grid">
-      <h3>作品名</h3>
-			<p class="img"><img src="images/image4.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
-		</article>
-    	<article class="grid">
-			<h3>作品名</h3>
-			<p class="img"><img src="images/image5.jpg" width="220" height="160" alt=""></p>
-			<p>作品概要<br>説明<br>使ったアプリ<br>その他など</p>
-		</article>
-	</section>
-
-</div>
 
 </body>
 
-<script src="./js/swiper.js"></script>
-<link href="./css/swiper.css" rel="stylesheet">
-<script>
-var swiper=new Swiper(".swiper-container",{
-	loop:true,
-	autoplay:true,
-	effect:'slide',
-	navigation:{
-		nextEl:'.swiper-button-next',
-		prevEl:'.swiper-button-prev'
-	}
-})
-</script>
 </html>

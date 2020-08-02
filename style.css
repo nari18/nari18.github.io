@@ -1,6 +1,74 @@
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {border: 0;font-family: inherit;font-size: 100%;font-style: inherit;font-weight: inherit;margin: 0;outline: 0;padding: 0;vertical-align: baseline;}
-:focus {outline: 0;}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-01: #ffffff; 
+    --secondary-01: #d8e2da;
+    --dark-087: rgba(0,0,0,0.87);
+    --dark-054: rgba(0,0,0,0.54);
+    --dark-026: rgba(0,0,0,0.26);
+    --dark-012: rgba(0,0,0,0.12);
+    --light-100: rgba(255,255,255,1.00);
+    --light-070: rgba(255,255,255,0.70);
+    --light-030: rgba(255,255,255,0.30);
+    --light-012: rgba(255,255,255,0.12);
+    --gray-010: #f1f1f1;
+    --gray-020: #e4e4e4;
+    font-size: 20pt;
+}
+
+.global-nav{
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #3cff77;
+    justify-content: space-between;
+    box-shadow: 0 2px 2px #999;
+    z-index: 5;
+	
+}
+.global-nav h1 a{
+    font-size: 1.5rem;
+    font-family: 'impact', sans-serif;
+    margin-left: 1rem;
+    color: var(--primary-01);
+    text-shadow: 1px 1px 0 var(--dark-026);
+	letter-spacing: 2px;
+	text-decoration: none;
+}
+.global-nav .menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: 'impact', sans-serif;
+}
+.global-nav .menu ul a{
+    color: var(--primary-050);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    font-size: 1.125rem;
+    padding: calc(1.25rem - 4px) 2rem;
+    transition: color background-color 0.3s;
+    border-right: 1px solid var(--dark-012);
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.global-nav .menu ul a:hover {
+    background-color: var(--primary-01);
+    color: var(--secondary-01);
+    border-bottom: 4px solid var(--secondary-01);
+}
+.global-nav .menu ul a:link,a:visited,a:active  {
+    color: var(--primary-01);
+}
+
 
 body{
 color:#555;
@@ -10,71 +78,118 @@ border-bottom:40px solid #0b5f00;
 background:#f4f4f4;
 }
 
-#wrapper{
-margin:0 auto;
-padding:0 1%;
+#sec1 p{ 
+	height: 100vh;
+    width: 100%;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    font-size: 100px;
 }
 
-.inner{
-margin:0 auto;
-width:100%;
+
+#sec2 {
+	font-family: 'impact', sans-serif;
+	font-size: 2rem;
+	padding-left: 20px;
+	text-decoration: none;
+	top: 5%;
+	margin: 0 auto;
+	background-image: url("images/azisai.jpg"); 
+	background-size: cover; /* 背景画像のサイズを全体にフィットするように設定 */
+	background-attachment: fixed; /* 背景画像をスクロールしても同じ位置になるように設定 */
+	display: flex; /* この要素の内部の表示をフレキシブルに変更可能とする */
+	justify-content: center; /* 内部要素を中央揃え */
+	align-items: center; /* 内部要素を中央揃え */
+	height: 100vh; /* 高さを画面の高さに揃える */
+	}
+	.background-filter {
+	width: 100%;
+	height: 100%;
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	z-index: -1; 
+	background-attachment: fixed;
+	opacity: 0.75; 
+	background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%); /* 背景をグラデーションで設定 */
+	}
+	  
+	  
+	  .profile-photo img {
+		display: block; /* 画像自体を箱として表示させる */
+		width: 300px; /* 横幅の設定 */
+		height: 300px; /* 高さの設定 */
+		border-radius: 50%; /* 角丸を50%で指定することで正方形の画像は円にくり抜かれる */
+	  }
+	  .profile-text {
+		max-width: 600px; 
+		padding: 1rem; 
+		color: rgb(255, 255, 255); 
+	  }
+	  h1 {
+		font-size: 1rem; 
+		letter-spacing: 0.1em; 
+	  }
+	  p{
+		font-size: 1rem; 
+		letter-spacing: 0.1em; 
+	  }
+	.profile-photo {
+	  position: relative; /* 縁取り要素を追加する前に、親コンテナの配置方法を相対配置に変更 */
+	}
+	.circle1,
+	.circle2,
+	.circle3 {
+	  position: absolute; /* 縁取り要素は絶対配置 */
+	  top: 0; /* .profile-photoの開始位置と揃える */
+	  width: 100%;
+	  height: 100%;
+	  border-radius: 40%; /* 40%の角丸めで歪な形を作成しておく */
+	  z-index: -1; /* 画像と背景の間に重ねる */
+	}
+	/* rotationという名前のアニメーションを作成 */
+  @keyframes rotation {
+	  from {  /* 開始時点の装飾 */
+		transform: rotate(0deg);  /* 変形操作の内、回転0度 */
+	  }
+	
+	  to {  /* 終了時点の装飾 */
+		transform: rotate(360deg); /* 変形操作の内、回転360度 */
+	  }
+	}
+	.circle1 {
+	  opacity: 0.1; /* 透明度 */
+	  background: #0af; /* 縁取りの色設定 */
+	  transform-origin: 50% 47%;  /* transformの基準位置を変更 */
+	  animation: rotation 5s infinite linear; /* rotationアニメーションの秒数と繰り返し、変化を線形に変更 */
+	}
+	
+	.circle2 {
+	  opacity: 0.3;
+	  background: #ff0;
+	  transform-origin: 52% 48%;
+	  animation: rotation 12s infinite linear;
+	}
+	
+	.circle3 {
+	  opacity: 0.2;
+	  background: #fa0;
+	  transform-origin: 48% 52%;
+	  animation: rotation 8s infinite linear;
+	}
+
+#sec3 {
+margin-bottom:10px;
+box-shadow:none;
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 100px;
+
 }
-
-#header{
-overflow:hidden;
-padding:8px 0;
-background:#1cce34;
-}
-
-.logo a{
-font-size:40px;
-font-weight:bold;
-line-height:1;
-color:#fff;
-}
-
-#header h1{
-font-size:30px;
-color:#fff;
-}
-
-#mainBanner{
-margin:0 auto 30px;
-padding:0;
-width:100%;
-line-height:0;
-background:#fff;
-}
-
-#mainBanner .inner{position:relative;}
-
-#mainBanner img{
-max-width:100%;
-height:auto;
-}
-
-.slogan{
-position:absolute;
-max-width:100%;
-height:auto;
-bottom:0;
-left:0;
-padding:5px 10px;
-line-height:1.4;
-z-index:100;
-}
-
-.slogan h2{
-padding-bottom:15px;
-color:rgb(255, 255, 255);
-font-size:40px;
-}
-
-.gridWrapper{
-padding-bottom:20px;
-overflow: hidden;
-}
-
 .grid h3{
 padding:10px 0;
 font-weight:bold;
@@ -84,55 +199,20 @@ background:#510080;
 text-align:center;
 }
 
-section.content{
-padding:0 10px 10px;
-margin-bottom:20px;
-overflow:hidden;
-font-size:35px;
-background:#fff;
-box-shadow:0 0 3px #ddd;
-}
-
-section.content p{margin-bottom:5px;}
-
-h3.heading{
-padding:5px 10px;
-margin:0 -10px 20px;
-font-size:16px;
-color:rgb(0, 0, 0);
-background:#f2f700;
-}
 
 img.frame,#gallery img{
 padding:3px;
 box-shadow:0 0 3px #ddd;
 }
 
-#gallery .grid{
-margin-bottom:10px;
-box-shadow:none;
+.gridWrapper{
+width:960px;
+margin:0 0 0 -20px;
 }
 
-.alignleft{
+.grid{
 float:left;
-clear:left;
-margin:3px 10px 10px 0;
+width:220px;
+margin-left:20px;
 }
-	#wrapper,.inner{
-	width:940px;
-	padding:0;
-	}
-	
-	#wrapper{padding-bottom:20px;}
-	
-	.gridWrapper{
-	width:960px;
-	margin:0 0 0 -20px;
-	}
-
-	.grid{
-	float:left;
-	width:220px;
-	margin-left:20px;
-	}
 	
